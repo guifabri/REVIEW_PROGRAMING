@@ -10,12 +10,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#" onclick="agregar_estudiante()">Agregar estudiante</a></li>
-                <li><a href="#" onclick="buscar_estudiante()">Buscar estudiante</a></li>
-                <li><a href="#" onclick="eliminar_estudiante()">Eliminar último estudiante</a></li>
+                <li><a href="#" onclick="mostrar_agregar_estudiante()">Agregar estudiante</a></li>
+                <li><a href="#" onclick="mostrar_Buscar_estudiante()">Buscar estudiante</a></li>
+                <li><a href="#" onclick="mostrar_Eliminar_estudiante()">Eliminar último estudiante</a></li>
                 <li><a href="#">Guardar en archivo</a></li>
                 <li><a href="#">Cargar desde un archivo</a></li>
-                <li><a href="#" onclick="listado_estudiantes()">Listado de estudiantes</a></li>
+                <li><a href="#" onclick="listado_Estudiantes()">Listado de estudiantes</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +42,7 @@
                 <br>
                 <button type="button" onclick="buscarEstudiante()">Buscar</button>
             </form>
-        </section></section>
+        </section>
         <section id="delete_student" style="display: none;">
             <!-- Formulario para eliminar estudiante -->
             <h2>Eliminar Estudiante</h2>
@@ -53,8 +53,8 @@
                 <button type="button" onclick="eliminarEstudiante()">Eliminar</button>
             </form>
         </section>
-        <section id="listado"></section>
-    </main> 
+        <section id = "listado"></section>
+    </main>
     <footer></footer>
     <script type="text/javascript" src="scripts/estudiantes.js"></script>
 </body>
