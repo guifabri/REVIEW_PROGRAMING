@@ -3,24 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/students.css">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="styles/esdudiantes.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="">Add student</a></li>
-                <li><a href="">Search student</a></li>
-                <li><a href="">Remove student</a></li>
-                <li><a href="">Save to a file</a></li>
-                <li><a href="">Load from a file</a></li>
-                <li><a href="">Student list</a></li>
+                <li><a href="#" onclick="agregar_estudiante()">Agregar estudiante</a></li>
+                <li><a href="#" onclick="buscar_estudiante()">Buscar estudiante</a></li>
+                <li><a href="#" onclick="eliminar_estudiante()">Eliminar último estudiante</a></li>
+                <li><a href="#">Guardar en archivo</a></li>
+                <li><a href="#">Cargar desde un archivo</a></li>
+                <li><a href="#" onclick="listado_estudiantes()">Listado de estudiantes</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section id="add_student" style="display: none;">
+            <!-- Formulario para agregar estudiante -->
+            <h2>Agregar Estudiante</h2>
+            <form>
+                <label for="ci">C.I.:</label>
+                <input type="text" id="ci" name="ci" required>
+                <br>
+                <label for="nombre">Nombres y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <button type="button" onclick="agregarEstudiante()">Agregar</button>
+            </form>
+        </section>
+        <section id="search_student" style="display: none;">
+            <!-- Formulario para buscar estudiante -->
+            <h2>Buscar Estudiante</h2>
+            <form>
+                <label for="buscar-ci">C.I.:</label>
+                <input type="text" id="buscar-ci" name="buscar-ci" required>
+                <br>
+                <button type="button" onclick="buscarEstudiante()">Buscar</button>
+            </form>
+        </section></section>
+        <section id="delete_student" style="display: none;">
+            <!-- Formulario para eliminar estudiante -->
+            <h2>Eliminar Estudiante</h2>
+            <form>
+                <label for="eliminar-ci">C.I.:</label>
+                <input type="text" id="eliminar-ci" name="eliminar-ci" required>
+                <br>
+                <button type="button" onclick="eliminarEstudiante()">Eliminar</button>
+            </form>
+        </section>
+        <section id="listado"></section>
+    </main> 
     <footer></footer>
-    <script type="text/javascript" src="scripts/students.js"></script>
+    <script type="text/javascript" src="scripts/estudiantes.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: Ubuntu;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+ul {
+    /border: 2px solid rgb(60, 0, 255);/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(255, 223, 223, 0.204);
+}
+
+ul a {
+    color: rgb(17, 255, 0);
+}
+
+ul a:hover {
+    background-color: rgb(8, 126, 0);
+    color: white;
+    font-weight: bold;
+}
