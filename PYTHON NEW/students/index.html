@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudiantes</title>
-    <link rel="stylesheet" href="styles/esdudiantes.css">
+    <link rel="stylesheet" href="styles/students.css">
 </head>
 <body>
     <header>
@@ -13,15 +13,14 @@
                 <li><a href="#" onclick="mostrar_agregar_estudiante()">Agregar estudiante</a></li>
                 <li><a href="#" onclick="mostrar_Buscar_estudiante()">Buscar estudiante</a></li>
                 <li><a href="#" onclick="mostrar_Eliminar_estudiante()">Eliminar último estudiante</a></li>
-                <li><a href="#">Guardar en archivo</a></li>
-                <li><a href="#">Cargar desde un archivo</a></li>
+                <li><a href="#" onclick="guardarEnArchivo()">Guardar en archivo</a></li>
+                <li><a href="#" onclick="cargarDesdeArchivo()">Cargar desde un archivo</a></li>
                 <li><a href="#" onclick="listado_Estudiantes()">Listado de estudiantes</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="add_student" style="display: none;">
-            <!-- Formulario para agregar estudiante -->
             <h2>Agregar Estudiante</h2>
             <form>
                 <label for="ci">C.I.:</label>
@@ -34,7 +33,6 @@
             </form>
         </section>
         <section id="search_student" style="display: none;">
-            <!-- Formulario para buscar estudiante -->
             <h2>Buscar Estudiante</h2>
             <form>
                 <label for="buscar-ci">C.I.:</label>
@@ -44,7 +42,6 @@
             </form>
         </section>
         <section id="delete_student" style="display: none;">
-            <!-- Formulario para eliminar estudiante -->
             <h2>Eliminar Estudiante</h2>
             <form>
                 <label for="eliminar-ci">C.I.:</label>
@@ -53,7 +50,7 @@
                 <button type="button" onclick="eliminarEstudiante()">Eliminar</button>
             </form>
         </section>
-        <section id = "listado"></section>
+        <section id="listado"></section>
     </main>
     <footer></footer>
     <script type="text/javascript" src="scripts/estudiantes.js"></script>
